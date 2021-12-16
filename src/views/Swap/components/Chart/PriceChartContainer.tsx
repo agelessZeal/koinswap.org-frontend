@@ -1,5 +1,5 @@
 import { Currency } from '@pancakeswap/sdk'
-import { FFF_ADDRESS } from 'config/constants'
+import { DTG_ADDRESS } from 'config/constants'
 import { useCurrency } from 'hooks/Tokens'
 import useTheme from 'hooks/useTheme'
 import React, { useCallback, useState } from 'react'
@@ -51,7 +51,7 @@ const PriceChartContainer: React.FC<PriceChartContainerProps> = ({
   const token0Address = getTokenAddress(fftChartInputId)
   const token1Address = getTokenAddress(fftChartOutputId)
 
-  // if(outputCurrencyId.toLowerCase() !== FFF_ADDRESS && inputCurrencyId.toLowerCase() !== FFF_ADDRESS){
+  // if(outputCurrencyId.toLowerCase() !== DTG_ADDRESS && inputCurrencyId.toLowerCase() !== DTG_ADDRESS){
   //    fffoutputCurrency = outputCurrency
   //    fffinputCurrency = inputCurrency
   //    token0Address = getTokenAddress(inputCurrencyId)

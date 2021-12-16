@@ -346,7 +346,7 @@ const HowToPlay: React.FC = () => {
           <Text>
             {t('Check our in-depth guide on')}{' '}
             <InlineLink href="https://docs.pancakeswap.finance/products/lottery/lottery-guide">
-              {t('how to play the FliferSwap lottery!')}
+              {t('how to play the koinswAp lottery!')}
             </InlineLink>
           </Text>
         </Flex>

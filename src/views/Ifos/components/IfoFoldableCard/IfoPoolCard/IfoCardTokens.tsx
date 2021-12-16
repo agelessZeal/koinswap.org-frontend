@@ -113,9 +113,9 @@ const IfoCardTokens: React.FC<IfoCardTokensProps> = ({
     }
     if (account && !hasProfile) {
       if (publicIfoData.status === 'finished') {
-        return <Text textAlign="center">{t('Activate FliferSwap Profile to take part in next IFO‘s!')}</Text>
+        return <Text textAlign="center">{t('Activate koinswAp Profile to take part in next IFO‘s!')}</Text>
       }
-      return <Text textAlign="center">{t('You need an active FliferSwap Profile to take part in an IFO!')}</Text>
+      return <Text textAlign="center">{t('You need an active koinswAp Profile to take part in an IFO!')}</Text>
     }
     if (publicIfoData.status === 'coming_soon') {
       return (

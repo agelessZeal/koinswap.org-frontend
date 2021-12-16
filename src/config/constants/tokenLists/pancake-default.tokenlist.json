@@ -1,5 +1,5 @@
 {
-  "name": "FliferSwap Default List",
+  "name": "koinswAp Default List",
   "timestamp": "2021-05-06T00:00:00Z",
   "version": {
     "major": 3,
@@ -18,12 +18,13 @@
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
+
     {
-      "name": "FLIFER COIN",
-      "symbol": "FFF",
-      "address": "0x166daee763902da67984e38baa478a63f55cc25b",
+      "name": "DTG",
+      "symbol": "DTG",
+      "address": "0x90fe761c696066672190cc62a84a2a41bc630a1b",
       "chainId": 56,
-      "decimals": 9,
+      "decimals": 18,
       "logoURI": ""
     },
     {
@@ -59,7 +60,7 @@
       "logoURI": "https://pancakeswap.finance/images/tokens/0x55d398326f99059ff775485246999027b3197955.png"
     },
     {
-      "name": "FliferSwap Token",
+      "name": "koinswAp Token",
       "symbol": "CAKE",
       "address": "0x0E09FaBB73Bd3Ade0a17ECC321fD13a19e81cE82",
       "chainId": 56,

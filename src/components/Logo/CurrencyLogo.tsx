@@ -1,6 +1,6 @@
 import { Currency, ETHER, Token } from '@pancakeswap/sdk'
 import { BinanceIcon } from '@pancakeswap/uikit'
-import { FFF_ADDRESS } from 'config/constants'
+import { DTG_ADDRESS } from 'config/constants'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'
 import useHttpLocations from '../../hooks/useHttpLocations'
@@ -28,13 +28,13 @@ export default function CurrencyLogo({
     if (currency === ETHER) return []
 
     if (currency instanceof Token) {
-      if(currency.address.toLowerCase() === FFF_ADDRESS){
-        return ['/logo.png']
+      if(currency.address.toLowerCase() === DTG_ADDRESS){
+        return ['/dtg.png']
       }
       if (currency instanceof WrappedTokenInfo) {
 
-        if(currency.tokenInfo.address.toLowerCase() === FFF_ADDRESS){
-          return ['/logo.png']
+        if(currency.tokenInfo.address.toLowerCase() === DTG_ADDRESS){
+          return ['/dtg.png']
         }
 
         return [...uriLocations, getTokenLogoURL(currency.address)]

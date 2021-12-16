@@ -3,7 +3,7 @@ import { mainnetTokens, testnetTokens } from './tokens'
 
 export const ROUTER_ADDRESS = '0x10ED43C718714eb63d5aA57B78B54704E256024E'
 
-export const FFF_ADDRESS = '0x166daee763902da67984e38baa478a63f55cc25b'
+export const DTG_ADDRESS = '0x90fe761c696066672190cc62a84a2a41bc630a1b'
 
 // a list of tokens by chain
 type ChainTokenList = {

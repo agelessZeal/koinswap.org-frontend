@@ -35,7 +35,7 @@ import ProgressSteps from './components/ProgressSteps'
 import { AppBody } from '../../components/App'
 import ConnectWalletButton from '../../components/ConnectWalletButton'
 
-import { FFF_ADDRESS, INITIAL_ALLOWED_SLIPPAGE } from '../../config/constants'
+import { DTG_ADDRESS, INITIAL_ALLOWED_SLIPPAGE } from '../../config/constants'
 import useActiveWeb3React from '../../hooks/useActiveWeb3React'
 import { useCurrency, useAllTokens } from '../../hooks/Tokens'
 import { ApprovalState, useApproveCallbackFromTrade } from '../../hooks/useApproveCallback'
@@ -356,108 +356,12 @@ export default function Swap({ history }: RouteComponentProps) {
     'confirmSwapModal',
   )
 
-  let fffToken = false;
-
-  const fftChartInputId =  '0x166daee763902da67984e38baa478a63f55cc25b'
-
-  const fftChartOutputId = '0x55d398326f99059fF775485246999027B3197955'
-
-  const fffoutputCurrency = useCurrency(fftChartOutputId)
-
-  const fffinputCurrency = useCurrency(fftChartInputId)
-
-  if(outputCurrencyId.toLowerCase() === FFF_ADDRESS || inputCurrencyId.toLowerCase() === FFF_ADDRESS){
-    fffToken = true;
-  }
-
-  // const [timeWindow, setTimeWindow] = useState<PairDataTimeWindowEnum>(0)
-
-  // const currentSwapPrice = null
-
-  // const { pairPrices : bnbPairPrice, pairId } = useFetchPairPrices({
-  //   token0Address:getTokenAddress('BNB'),
-  //   token1Address: getTokenAddress('0x166daee763902da67984e38baa478a63f55cc25b'),
-  //   timeWindow,
-  //   currentSwapPrice,
-  // })
-
-
-  // const { pairPrices : usdtPairPrice, pairId : pairUSDTId  } = useFetchPairPrices({
-  //   token0Address:getTokenAddress('0x166daee763902da67984e38baa478a63f55cc25b'),
-  //   token1Address: getTokenAddress('0x55d398326f99059fF775485246999027B3197955'),
-  //   timeWindow,
-  //   currentSwapPrice,
-  // })
-
-  // const valueToDisplay = bnbPairPrice ? bnbPairPrice[bnbPairPrice.length - 1]?.value : 0;
-
-  // const valueToDisplayUSDT = usdtPairPrice ? usdtPairPrice[usdtPairPrice.length - 1]?.value : 0;
-
-  // const usdtPrice = usdtPairPrice? `$${formatAmount(valueToDisplayUSDT, formatOptions)}`  : 'Loading...'
-
-  // const bnbPrice = bnbPairPrice? `${formatAmount(Math.round(valueToDisplay), formatOptions2)}` : 'Loading...'
 
   return (
     <Page removePadding={isChartExpanded} hideFooterOnDesktop={isChartExpanded}>
 
-      {/* {isMobile ?(
-          <Box width="90%" color="textSubtle" style={{ userSelect: 'none',minWidth:300, maxWidth:450,color:'#fff', fontSize:20, marginLeft:10,marginBottom:10 ,justifyContent:'center', alignItems:'center'}}>
-            <div style={{display:'flex',}}>
-              <span style={{width:'60%'}}>Price (USD/FFF):</span><span> {`${usdtPrice}`}</span>
-            </div>
-
-            <div style={{display:'flex',}}>
-              <span style={{width:'60%'}}>Price (FFF/BNB):</span><span> {`${bnbPrice}`}</span>
-            </div>
-          </Box>
-        ):(
-          <Box width="50%" color="textSubtle" style={{ userSelect: 'none',minWidth:300, maxWidth:450,color:'#fff', fontSize:25, marginLeft:60,marginBottom:10 ,justifyContent:'center', alignItems:'center'}}>
-            <div style={{display:'flex',}}>
-              <span style={{width:'60%'}}>Price (USD/FFF):</span><span> {`${usdtPrice}`}</span>
-            </div>
-
-            <div style={{display:'flex',}}>
-              <span style={{width:'60%'}}>Price (FFF/BNB):</span><span> {`${bnbPrice}`}</span>
-            </div>
-
-          </Box>
-        )
-      } */}
-
-
-
       <Flex width="100%" justifyContent="center" position="relative">
 
-
-        {/* {!isMobile && (
-          <PriceChartContainer
-            inputCurrencyId={fffToken? fftChartInputId :inputCurrencyId}
-            inputCurrency={fffToken ? fffinputCurrency : currencies[Field.INPUT]}
-            outputCurrencyId={ fffToken? fftChartOutputId: outputCurrencyId}
-            outputCurrency={fffToken? fffoutputCurrency: currencies[Field.OUTPUT]}
-            isChartExpanded={isChartExpanded}
-            setIsChartExpanded={setIsChartExpanded}
-            isChartDisplayed={isChartDisplayed}
-            currentSwapPrice={fffToken? null : singleTokenPrice}
-          />
-        )}
-        <BottomDrawer
-          content={
-            <PriceChartContainer
-              inputCurrencyId={fffToken? fftChartInputId :inputCurrencyId}
-              inputCurrency={fffToken ? fffinputCurrency : currencies[Field.INPUT]}
-              outputCurrencyId={ fffToken? fftChartOutputId: outputCurrencyId}
-              outputCurrency={fffToken? fffoutputCurrency: currencies[Field.OUTPUT]}
-              isChartExpanded={isChartExpanded}
-              setIsChartExpanded={setIsChartExpanded}
-              isChartDisplayed={isChartDisplayed}
-              currentSwapPrice={fffToken? null : singleTokenPrice}
-              isMobile
-            />
-          }
-          isOpen={isChartDisplayed}
-          setIsOpen={setIsChartDisplayed}
-        /> */}
         <Flex flexDirection="column">
           <StyledSwapContainer $isChartExpanded={isChartExpanded}>
             <StyledInputCurrencyWrapper mt={isChartExpanded ? '24px' : '0'} mr={isChartExpanded ? '0' : '0'}>

@@ -1,6 +1,6 @@
 # Documentation: Info
 
-A brief overview how Info part of FliferSwap website works.
+A brief overview how Info part of koinswAp website works.
 
 ## Code structure
 

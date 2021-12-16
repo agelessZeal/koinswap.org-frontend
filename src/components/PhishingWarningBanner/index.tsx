@@ -51,7 +51,7 @@ const PhishingWarningBanner: React.FC = () => {
   const warningTextComponent = (
     <>
       <Text as="span" color="white" fontSize="25px" bold>
-        {t('Flifer Technologies')}
+        {t('koinswAp')}
       </Text>
       {/* {warningTextAsParts.map((text, i) => (
         <Text
