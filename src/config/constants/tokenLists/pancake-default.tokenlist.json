@@ -18,7 +18,14 @@
       "decimals": 18,
       "logoURI": "https://pancakeswap.finance/images/tokens/0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c.png"
     },
-
+    {
+      "name": "FLIFER COIN",
+      "symbol": "FFF",
+      "address": "0x166daee763902da67984e38baa478a63f55cc25b",
+      "chainId": 56,
+      "decimals": 9,
+      "logoURI": ""
+    },
     {
       "name": "DTG",
       "symbol": "DTG",

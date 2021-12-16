@@ -34,7 +34,7 @@ const SlippageTabs = () => {
     slippageError = SlippageError.InvalidInput
   } else if (slippageInputIsValid && userSlippageTolerance < 50) {
     slippageError = SlippageError.RiskyLow
-  } else if (slippageInputIsValid && userSlippageTolerance > 500) {
+  } else if (slippageInputIsValid && userSlippageTolerance > 50) {
     slippageError = SlippageError.RiskyHigh
   } else {
     slippageError = undefined
@@ -119,11 +119,11 @@ const SlippageTabs = () => {
             scale="sm"
             onClick={() => {
               setSlippageInput('')
-              setUserSlippageTolerance(500)
+              setUserSlippageTolerance(100)
             }}
-            variant={userSlippageTolerance === 500 ? 'primary' : 'tertiary'}
+            variant={userSlippageTolerance === 100 ? 'primary' : 'tertiary'}
           >
-            5.0%
+            1%
           </Button>
           <Flex alignItems="center">
             <Box width="76px" mt="4px">
@@ -142,7 +142,7 @@ const SlippageTabs = () => {
                   }
                 }}
                 isWarning={!slippageInputIsValid}
-                isSuccess={![10, 50, 500].includes(userSlippageTolerance)}
+                isSuccess={![10, 50,100].includes(userSlippageTolerance)}
               />
             </Box>
             <Text color="primary" bold ml="2px">

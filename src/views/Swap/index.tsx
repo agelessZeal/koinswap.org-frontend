@@ -444,21 +444,21 @@ export default function Swap({ history }: RouteComponentProps) {
                             />
                           </RowBetween>
                         )}
-                        {/* {allowedSlippage !== INITIAL_ALLOWED_SLIPPAGE && (
+                        {allowedSlippage !== INITIAL_ALLOWED_SLIPPAGE && (
                           <RowBetween align="center">
                             <Label>{t('Slippage Tolerance')}</Label>
                             <Text bold color="primary">
                               {allowedSlippage / 100}%
                             </Text>
                           </RowBetween>
-                        )} */}
+                        )}
 
-                          <RowBetween align="center">
+                          {/* <RowBetween align="center">
                             <Label>{t('Slippage Tolerance')}</Label>
                             <Text bold color="primary">
                               {allowedSlippage / 100}%
                             </Text>
-                          </RowBetween>
+                          </RowBetween> */}
                       </AutoColumn>
                     )}
                   </AutoColumn>

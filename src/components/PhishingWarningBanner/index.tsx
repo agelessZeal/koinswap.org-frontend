@@ -70,11 +70,11 @@ const PhishingWarningBanner: React.FC = () => {
   return (
     <Container>
       {isMobile || isMd ? (
-        <Link external href="https://flifer.com/">
+        <Link  href="/">
                     <picture>
               {/* <source type="image/webp" srcSet="/images/decorations/phishing-warning-bunny.webp" /> */}
               <source type="image/png" srcSet="/logo.png" />
-              <img src="/logo.png" alt="phishing-warning" width="55px" />
+              <img src="/logo.png" alt="phishing-warning" width="50px" />
             </picture>
           <Box style={{marginLeft:8}}>{warningTextComponent}</Box>
           {/* <IconButton onClick={hideBanner} variant="text">
@@ -82,12 +82,12 @@ const PhishingWarningBanner: React.FC = () => {
           </IconButton> */}
         </Link>
       ) : (
-        <Link external href="https://flifer.com/">
+        <Link  href="/">
           <InnerContainer>
             <picture>
               {/* <source type="image/webp" srcSet="/images/decorations/phishing-warning-bunny.webp" /> */}
               <source type="image/png" srcSet="/logo.png" />
-              <img src="/logo.png" alt="phishing-warning" width="55px" />
+              <img src="/logo.png" alt="phishing-warning" width="50px" />
             </picture>
             <SpeechBubble>{warningTextComponent}</SpeechBubble>
           </InnerContainer>
