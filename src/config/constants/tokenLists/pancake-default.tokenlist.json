@@ -27,6 +27,14 @@
       "logoURI": ""
     },
     {
+      "name": "Trust Wallet",
+      "symbol": "TWT",
+      "address": "0x4B0F1812e5Df2A09796481Ff14017e6005508003",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://bscscan.com/token/images/trust_32.png"
+    },
+    {
       "name": "DTG",
       "symbol": "DTG",
       "address": "0x90fe761c696066672190cc62a84a2a41bc630a1b",

@@ -1,8 +1,8 @@
 {
   "short_name": "koinswAp",
   "name": "koinswAp",
-  "description": "Farm CAKE with Pancake LP Tokens",
-  "homepage_url": "https://pancakeswap.finance",
+  "description": "Farm DTG with koinswAp LPs Tokens",
+  "homepage_url": "https://koinswap.org",
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#1FC7D4",
