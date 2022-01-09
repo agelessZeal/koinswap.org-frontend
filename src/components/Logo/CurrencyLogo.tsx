@@ -29,12 +29,12 @@ export default function CurrencyLogo({
 
     if (currency instanceof Token) {
       if(currency.address.toLowerCase() === DTG_ADDRESS){
-        return ['/dtg.png']
+        return ['/3.png']
       }
       if (currency instanceof WrappedTokenInfo) {
 
         if(currency.tokenInfo.address.toLowerCase() === DTG_ADDRESS){
-          return ['/dtg.png']
+          return ['/3.png']
         }
 
         return [...uriLocations, getTokenLogoURL(currency.address)]

@@ -35,8 +35,8 @@
       "logoURI": "https://bscscan.com/token/images/trust_32.png"
     },
     {
-      "name": "DTG",
-      "symbol": "DTG",
+      "name": "DGT",
+      "symbol": "DGT",
       "address": "0x90fe761c696066672190cc62a84a2a41bc630a1b",
       "chainId": 56,
       "decimals": 18,
